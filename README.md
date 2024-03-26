@@ -2,20 +2,36 @@
 
 Next.js, TypeScript, Shadcn UI
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-cd dapp && npm run dev
-# or
-cd dapp && yarn dev
-# or
-cd dapp && pnpm install && pnpm dev
-# or
-cd dapp && bun dev
+```dApp structure.
+├── dapp
+│   ├── layout.tsx
+│   └── page.tsx
+├── components
+│   ├── ui
+│   │   ├── alert-dialog.tsx
+│   │   ├── button.tsx
+│   │   ├── dropdown-menu.tsx
+│   │   └── ...
+│   ├── main-nav.tsx
+│   ├── page-header.tsx
+│   └── ...
+├── lib
+│   └── utils.ts
+├── styles
+│   └── globals.css
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## The UI components in the components/ui folder.
+
+- The rest of the components such as <PageHeader /> and <MainNav /> are placed in the components folder.
+- The lib folder contains all the utility functions.
+- The styles folder contains the global CSS.
+
+## Documentation
+
+Shadcn UI Document: (https://ui.shadcn.com/docs/installation/next)
